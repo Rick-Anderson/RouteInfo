@@ -6,6 +6,12 @@
     <Company>Microsoft</Company>
     <Product>ASP.NET Core Samples</Product>
     <Description>Provides diagnostic output for routing.</Description>
+    <RepositoryUrl>https://github.com/Rick-Anderson/RouteInfo</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Rick.Docs.Samples.RouteInfo</PackageId>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Version>1.0.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

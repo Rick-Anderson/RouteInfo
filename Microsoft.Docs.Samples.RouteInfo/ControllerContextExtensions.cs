@@ -2,7 +2,7 @@
 
 namespace Microsoft.Docs.Samples
 {
-    internal static class ControllerContextExtensions
+    public static class ControllerContextExtensions
     {
         public static IActionResult MyDisplayRouteInfo(this ControllerContext ctx, int? id, string msg = null) =>
             ctx.MyDisplayRouteInfo(id?.ToString(), msg);
