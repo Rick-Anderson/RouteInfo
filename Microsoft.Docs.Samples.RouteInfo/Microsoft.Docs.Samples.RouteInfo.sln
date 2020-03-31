@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.98
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Docs.Samples.RouteInfo", "Microsoft.Docs.Samples.RouteInfo.csproj", "{C5D46356-47AF-4371-9901-58312E46AEAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5D46356-47AF-4371-9901-58312E46AEAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D46356-47AF-4371-9901-58312E46AEAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D46356-47AF-4371-9901-58312E46AEAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D46356-47AF-4371-9901-58312E46AEAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B3F0E1C-86FF-4399-81FF-308B73783793}
+	EndGlobalSection
+EndGlobal
