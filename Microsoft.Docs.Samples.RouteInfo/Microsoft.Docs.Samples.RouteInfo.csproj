@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Authors>Microsoft.Docs</Authors>
+    <TargetFramework>netcoreapp6.0</TargetFramework>
+    <Authors>serpent5,Rick-Anderson,Microsoft.Docs</Authors>
     <Company>Microsoft</Company>
     <Product>ASP.NET Core Samples</Product>
     <Description>Provides diagnostic output for routing.</Description>
@@ -11,7 +11,7 @@
     <PackageId>Rick.Docs.Samples.RouteInfo</PackageId>
     <AssemblyVersion>1.0.0.4</AssemblyVersion>
     <FileVersion>1.0.0.4</FileVersion>
-    <Version>1.0.0.4</Version>
+    <Version>1.0.0.6</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>routing</PackageTags>
