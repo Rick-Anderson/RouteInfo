@@ -1,0 +1,1 @@
+Note to self, NuGet API key is stored in Lastpass. 
