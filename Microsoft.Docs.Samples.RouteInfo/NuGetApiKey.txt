@@ -1,1 +1,3 @@
 Note to self, NuGet API key is stored in Lastpass. 
+In the directory, run the following command:
+dotnet nuget push Rick.Docs.Samples.RouteInfo.1.0.0.7.nupkg --api-key <get key from Lastpass> --source https://api.nuget.org/v3/index.json

@@ -7,7 +7,7 @@ namespace Microsoft.Docs.Samples;
 /// Used with Razor Pages
 /// </summary>
 /// 
-internal static class PageContextExtensions
+public static  class PageContextExtensions
 {
     public static IActionResult MyDisplayRouteInfoRP(this PageContext ctx, int? id, string msg = null) =>
         ctx.MyDisplayRouteInfoRP(id?.ToString(), msg);
