@@ -9,12 +9,13 @@
     <RepositoryUrl>https://github.com/Rick-Anderson/RouteInfo</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Rick.Docs.Samples.RouteInfo</PackageId>
-    <AssemblyVersion>1.0.0.4</AssemblyVersion>
-    <FileVersion>1.0.0.4</FileVersion>
-    <Version>1.0.0.6</Version>
+    <AssemblyVersion>1.0.0.8</AssemblyVersion>
+    <FileVersion>1.0.0.8</FileVersion>
+    <Version>1.0.0.8</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>routing</PackageTags>
+    <PackageProjectUrl>https://www.nuget.org/packages/Rick.Docs.Samples.RouteInfo</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
