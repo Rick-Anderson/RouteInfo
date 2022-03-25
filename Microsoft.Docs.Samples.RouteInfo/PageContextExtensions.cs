@@ -1,32 +1,32 @@
-﻿using Microsoft.AspNetCore.Mvc; 
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Microsoft.Docs.Samples;
 
 /// <summary>
-/// Used with Controllers
+/// Used with Razor Pages
 /// </summary>
-public static class ControllerContextExtensions
+/// 
+internal static class PageContextExtensions
 {
-    public static IActionResult MyDisplayRouteInfo(this ControllerContext ctx, int? id, string msg = null) =>
-        ctx.MyDisplayRouteInfo(id?.ToString(), msg);
+    public static IActionResult MyDisplayRouteInfoRP(this PageContext ctx, int? id, string msg = null) =>
+        ctx.MyDisplayRouteInfoRP(id?.ToString(), msg);
 
-    public static IActionResult MyDisplayRouteInfo(this ControllerContext ctx,
+    public static IActionResult MyDisplayRouteInfoRP(this PageContext ctx,
                                                string id = null, string msg = null)
     {
-        return new ContentResult { Content = ToCtxString(ctx, id, msg) };
+        return new ContentResult { Content = ToCtxStringP(ctx, id, msg) };
     }
 
-    public static string ToCtxString(this ControllerContext ctx, int? id, string msg = null) =>
-        ctx.ToCtxString(id?.ToString(), msg);
+    public static string ToCtxStringP(this PageContext ctx, int? id, string msg = null) =>
+        ctx.ToCtxStringP(id?.ToString(), msg);
 
-    public static string ToCtxString(this ControllerContext ctx,
+    public static string ToCtxStringP(this PageContext ctx,
                                                string id = null, string msg = null)
     {
         var actionDescriptor = ctx.ActionDescriptor;
         var routeTemplate = actionDescriptor?.AttributeRouteInfo?.Template;
         var routeName = actionDescriptor.AttributeRouteInfo?.Name;
-        var actionName = actionDescriptor.ActionName;
-        var controllerName = actionDescriptor.ControllerName;
         var routeOrder = actionDescriptor.AttributeRouteInfo?.Order;
         var method = ctx.HttpContext.Request.Method;
         var path = ctx.HttpContext.Request.Path;
@@ -44,6 +44,6 @@ public static class ControllerContextExtensions
         var methods = (method == "GET") ? "" : $"{method}";
 
         return $"{methods} {path} {areaStr} {ids} {ors} {tms} " +
-            $"{controllerName}.{actionName} {routeName} {msg}";
+            $"  {routeName} {msg}";
     }
 }
